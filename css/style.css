@@ -311,7 +311,7 @@ text-align: center;
 }
 
 .work-section {
-    padding-top: 94px;
+    padding-top: 0;
     padding-bottom: 94px;
 }
 
@@ -377,7 +377,6 @@ color:var(--accent-color);
     border-bottom: 1px solid #eeeeee;
 }
 .secondary-picture-name {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
     vertical-align: Top;
@@ -399,7 +398,8 @@ color:var(--accent-color);
 }
 
 .logo-bottom {
-    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
 }
 .studio-footer {
     font-family: 'Raleway', sans-serif;
