@@ -181,6 +181,11 @@ margin-left: auto;
         color: var(--icon-color);
 }
 
+.clients-link:hover,
+.clients-link:focus {
+    fill: var(--primary-white-color);
+}
+
 .client-item {
     width: 170px;
     height: 92px;
