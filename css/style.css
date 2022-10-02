@@ -232,7 +232,7 @@ align-items: baseline;
     justify-content: center;
 }
 
-.footer-social-list .footer-social-title {
+.footer-social-list > .footer-social-title {
     margin: 0
 }
 
