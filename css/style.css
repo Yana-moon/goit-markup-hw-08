@@ -69,9 +69,6 @@ ol {
     border-bottom: 1px solid #ececec;
 }
 
-.link-header {
-    margin-right: auto;
-}
 
 .header-container {
     display: flex;
@@ -209,12 +206,10 @@ margin-left: auto;
 .footer-social-title {
     text-transform: uppercase;
     color: var(--primary-white-color);
-    align-self:auto;
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    vertical-align: Top;
     letter-spacing: 0.03em;
 
 }
@@ -291,7 +286,7 @@ margin-left: auto;
 }
 
 .icon {
-    fill: var(--icon-color);
+    fill: currentColor;
 }
 
 .icon:hover {
@@ -338,7 +333,7 @@ margin-right: 8px;
 }
 
 .btn-portfolio {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.87;
     vertical-align: Center;
@@ -522,7 +517,7 @@ text-align: center;
     letter-spacing: 0.03em; 
     color:  var(--text-color);
     margin-top: 10px;
-    margin-bottom: auto;
+    margin-bottom: 16px;
     text-align: center;
 }
 .adress {
@@ -583,43 +578,44 @@ color:var(--accent-color);
 }
 
 .web {
-    font-family: 'Raleway',sans-serif;
-    font-weight: 700; 
-    font-size: 26px; 
-    line-height: 1.19; 
-    line-height: 100%; 
-    vertical-align: Top; 
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
     color: var(--accent-color);
     letter-spacing: 0.03em;
-    margin-bottom: 20px;
-
 }
 
+.lg-header {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.lg-header {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.logo-bottom {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
 .logo-bottom {
     margin-bottom: 20px;
     display: block;
 }
 .studio-footer {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    line-height: 100%;
-    vertical-align: Top;
-    letter-spacing: 0.03em;
     color: var(--primary-white-color);
-    margin-bottom: 20px;
 }
 
 .studio-header {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    line-height: 100%;
-    vertical-align: Top;
-    letter-spacing: 0.03em;
-    color: #000000;
+    color:var(--primary-color);
     margin-right: 93px;
 }
 .visually-hidden {
