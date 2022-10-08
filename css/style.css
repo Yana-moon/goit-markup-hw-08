@@ -53,8 +53,6 @@ ol {
 }
 
 .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
     border-bottom: 1px solid var(--header-border);
     background-color: var(--primary-white-color);
     border-bottom: 1px solid #ececec;
@@ -96,7 +94,8 @@ ol {
 }
 
 .lg-header {
-    margin-bottom: 20px;
+    padding-top: 24px;
+    padding-bottom: 25px;
     display: block;
 }
 
@@ -133,6 +132,8 @@ ol {
     font-weight: 500; 
     line-height: 1.14;
     vertical-align: Top; 
+    padding: 32px 0;
+    display: block;
     letter-spacing: 0.02em;
     color: var(--primary-color);
 }
@@ -342,10 +343,11 @@ margin-left: auto;
     width: 370px;
     height: 70px;
     letter-spacing: 0.03em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--primary-white-color);
-    text-align: center;
     background-color: rgba(47, 48, 58, 0.8);
-    padding: 27px;
 }
 
 .secondary-section {
@@ -753,11 +755,11 @@ overflow: hidden;
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transform: translate(-50%, -50%);
-
+    transition: transform 300ms linear;
 }
 
 .backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scaleY(1);
+    transform: translate(-50%, -50%) scaleY(5);
 }
 
 .button-modal {
@@ -787,6 +789,7 @@ overflow: hidden;
     width: 30px;
     height: 30px;
     opacity: 0.3;
+    transition: opacity 300ms linear;
 }
 
 
