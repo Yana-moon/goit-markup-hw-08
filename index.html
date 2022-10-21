@@ -402,6 +402,16 @@
             </li>
         </ul>
     </div>
+    <div class="footer-subscribe">
+        <p class="footer-subscribe-title">Підпишіться на розсилку</p>
+    <form class="footer-form">
+            <input type="text" class="footer-input-text" name="user-email" placeholder="E-mail" id="user-email">
+            <button type="submit" class="footer-button">Підписатися
+    <svg class="footer-icon-send" widht="24" height="24">
+    <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+    </svg>
+    </button>
+    </form>
     </div>
     </footer>  
     <div class="backdrop is-hidden" data-modal>
@@ -445,6 +455,17 @@
             <label for="user-comment" class="modal-label-text">Коментар</label>
                 <textarea name="user-comment" id="user-comment" class="modal-comment" placeholder="Введіть текст"></textarea>
             </label>
+            </div>
+            <div class="modal-field"> 
+                <input type="checkbox" class="input-check visually-hidden" name="privacy" value="true" id="privacy">
+                <label for="privacy" class="check-text">
+            <span>
+                <svg class="check-input-icon" width="16" height="15">
+                    <use href="./images/symbol-defs.svg#icon-check"></use>
+                </svg>
+            </span>
+            <p class="license">Погоджуюся з розсилкою та приймаю</p> 
+            <a href="" class="license-link">Умови договору</a>
             </div>
             <button type="submit" class="modal-button">Відправити</button>
         </form>
