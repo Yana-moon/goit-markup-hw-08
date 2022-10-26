@@ -976,12 +976,7 @@ justify-content: center;
     border-color: var(--accent-color);
 }
 
-.license {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--text-color);
-}
+
 
 .license-link {
     font-size: 14px;
