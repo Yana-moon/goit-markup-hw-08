@@ -915,8 +915,8 @@ margin-bottom: 12px;
     fill: var(--accent-color);
 }
 
-.modal-field{
-    margin-bottom: 10px;
+.modal-field:not(:last-child) {
+    margin-bottom: 20px;
 }
 
 .modal-comment {
