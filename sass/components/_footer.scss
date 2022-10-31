@@ -1,0 +1,208 @@
+.footer-black {
+    background-color: #2F303A;
+}
+
+.footer-black {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-block {
+    display: flex;
+    align-items: baseline;
+}
+
+.logo-bottom {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.logo-bottom {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.studio-footer {
+    color: var(--primary-white-color);
+}
+
+.adress {
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--primary-white-color);
+}
+
+.adress {
+    font-weight: 400;
+    line-height: 1.71;
+    vertical-align: Top;
+    letter-spacing: 0.03em;
+    color: var(--primary-white-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.adress:hover,
+.adress:focus {
+    color: var(--accent-color);
+}
+
+.footer-list:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address {
+    font-weight: 400;
+    line-height: 1.71;
+    vertical-align: Top;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address:hover,
+.address:focus {
+    color: var(--accent-color);
+}
+
+.footer-social-list {
+    display: block;
+    margin-left: 70px;
+}
+
+.footer-social-title,
+.footer-subscribe-title {
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+
+}
+
+.footer-social-title {
+    display: block;
+}
+
+.social-list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.social-list {
+    margin: 0;
+    padding: 0;
+}
+
+.social-icon {
+    width: 44px;
+    height: 44px;
+}
+
+.social-icon-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--primary-white-color);
+}
+
+.social-icon-link {
+    fill: currentColor;
+    background-color: rgba(255, 255, 255, 10%);
+    border-radius: 50%;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icon-link:hover,
+.social-icon-link:focus {
+    fill: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+.footer-icon {
+    fill: currentColor;
+}
+
+.footer-input-text {
+    width: 358px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #2F303A;
+    border-color: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding-left: 16px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.footer-subscribe {
+    margin-left: auto;
+}
+
+.footer-input-text:hover,
+.footer-input-text:focus {
+    border-color: var(--accent-color);
+}
+
+.footer-form {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.footer-icon-send {
+    margin-left: 10px;
+    align-items: center;
+}
+
+.footer-icon-send {
+    fill: var(--primary-white-color);
+}
+
+.footer-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    border: 1px transparent;
+    text-align: center;
+    margin: 0;
+    border-radius: 4px;
+    padding: 10px 28px;
+    width: 200px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    justify-content: center;
+    display: flex;
+}
+
+.footer-button:hover,
+.footer-button:focus {
+    color: var(--primary-white-color);
+    background-color: #188ce8;
+}
