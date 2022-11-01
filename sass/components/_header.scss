@@ -78,6 +78,7 @@
 .menu__link:hover,
 .menu__:focus {
     color: var(--accent-color);
+    position: relative;
 }
 
 .current-link {

@@ -142,6 +142,7 @@ ol {
 .menu__link:hover,
 .menu__:focus {
   color: var(--accent-color);
+  position: relative;
 }
 
 .current-link {
@@ -268,7 +269,7 @@ ol {
   gap: 30px;
 }
 
-.section__icons-services {
+.section__icons {
   background-color: var(--bottom-background-color);
   align-items: center;
   height: 120px;
@@ -293,7 +294,6 @@ ol {
 }
 
 .section__subtitle {
-  font-weight: 400;
   line-height: 1.71;
   vertical-align: Top;
   letter-spacing: 0.03em;
@@ -315,7 +315,6 @@ ol {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  vertical-align: Top;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 50px;
@@ -392,7 +391,6 @@ ol {
 }
 
 .worker__subtitle {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   vertical-align: Top;
@@ -530,10 +528,6 @@ ol {
 }
 
 .adress {
-  font-weight: 400;
-  line-height: 1.71;
-  vertical-align: Top;
-  letter-spacing: 0.03em;
   color: var(--primary-white-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -548,7 +542,6 @@ ol {
 }
 
 .address {
-  font-weight: 400;
   line-height: 1.71;
   vertical-align: Top;
   letter-spacing: 0.03em;
@@ -911,7 +904,7 @@ ol {
 }
 
 .modal-field:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .modal-comment {
