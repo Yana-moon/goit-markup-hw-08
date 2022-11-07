@@ -1,6 +1,8 @@
 .section__workers {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    //padding-top: 94px;
+    //padding-bottom: 94px;
 }
 
 .section__workers {
@@ -23,6 +25,7 @@
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
 }
 
 .worker {
@@ -66,6 +69,7 @@
 .worker__item {
     width: 44px;
     height: 44px;
+
 }
 
 .worker__item__link {
