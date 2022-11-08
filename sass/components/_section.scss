@@ -2,7 +2,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
     
-        @media screen and (min-width: 1600px) {
+        @include desktop {
             padding-top: 94px;
             padding-bottom: 94px;
         }
@@ -16,11 +16,11 @@
 
 .section__pics {
     width: 100%;
-            @media screen and (min-width: 768px) {
+        @include tablet {
                 width: calc((100% - 30px) / 2);
             }
         
-            @media screen and (min-width: 1600px) {
+        @include desktop {
                 width: calc((100% - 90px) / 4);
             }
 }
@@ -62,7 +62,7 @@
 .section__work {
     padding-top: 94px;
     padding-bottom: 94px;
-    @media screen and (max-width: 1599px) {
+    @media screen and (max-width: 1199px) {
             display:none;
         }
 }
@@ -74,7 +74,7 @@
 .secondary-title {
     font-weight: 700;
     font-size: 28px;
-    @media screen and (min-width: 1600px) {
+    @include desktop {
         font-size: 36px;
     }
     line-height: 1.16;

@@ -1,7 +1,7 @@
 .section__clients {
     padding-top: 60px;
     padding-bottom: 60px;
-    @media screen and (min-width: 1600px) {
+    @include desktop {
     padding-top: 94px;
     padding-bottom: 94px;
         }
@@ -18,16 +18,14 @@
     display: flex;
     //width: 170px;
     //height: 92px;
-        @media screen and (min-width: 480px) {
-                width: 210px;
+    @include mobile  {
+    width: 210px;
             }
-        
-            @media screen and (min-width: 768px) {
-            width: 226px;
+    @include tablet {
+    width: 226px;
             }
-        
-            @media screen and (min-width: 1600px) {
-                width: 170px;
+    @include desktop {
+    width: 170px;
             }
     height: 92px;
     background-color: var(--primary-white-color);
@@ -59,13 +57,13 @@
     /*width: 170px;*/
     width: 100%;
     height: 92px;
-    @media screen and (min-width: 480px) {
+    @include mobile {
             width: calc((100% - 30px) / 2);
         }
-    @media screen and (min-width: 768px) {
+    @include tablet {
             width: calc((100% - 60px) / 3);
         } 
-    @media screen and (min-width: 1600px) {
-            width: calc((100% - 180px) / 6);
+    @include desktop {
+            width: calc((100% - 150px) / 6);
         }
 }
