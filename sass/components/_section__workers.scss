@@ -1,8 +1,10 @@
 .section__workers {
     padding-top: 60px;
     padding-bottom: 60px;
-    //padding-top: 94px;
-    //padding-bottom: 94px;
+    @media screen and (min-width: 1600px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
 }
 
 .section__workers {
@@ -15,17 +17,29 @@
 
 .workers__pictures {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
 .workers__list {
     color: var(--primary-color);
+    width: 100%;
     background-color: var(--primary-white-color);
     text-align: center;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-
+    @media screen and (min-width: 480px) {
+            width: 100%;
+        }
+    
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 30px) / 2);
+        }
+    
+        @media screen and (min-width: 1600px) {
+            width: calc((100% - 90px) / 4);
+        }
 }
 
 .worker {
