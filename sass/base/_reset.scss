@@ -17,7 +17,7 @@ ol {
 
 img {
     display: block;
-    max-width: 100%;
+    //max-width: 100%;
     height: auto;
 }
 
@@ -44,4 +44,7 @@ a {
 ul,
 ol {
     list-style: none;
+}
+.no-scroll {
+    overflow: hidden;
 }

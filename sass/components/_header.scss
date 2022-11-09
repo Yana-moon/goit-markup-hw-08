@@ -1,26 +1,10 @@
-/*.header {
+/*
+*/
+
+.header {
     border-bottom: 1px solid var(--header-border);
     background-color: var(--primary-white-color);
     border-bottom: 1px solid #ececec;
-}*/
-
-.header {
-    padding: 10px 0;
-    border-bottom: 1px solid var(--header-border);
-
-    &__container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    @include tablet {
-        padding: 21px;
-    }
-
-    @include desktop {
-        padding: 24px;
-    }
 }
 
 .header__container {
@@ -28,7 +12,7 @@
     align-items: center;
 }
 
-.navigation-menu {
+.navigation {
     display: flex;
     align-items: center;
 }
