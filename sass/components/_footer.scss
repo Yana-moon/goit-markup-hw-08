@@ -1,17 +1,78 @@
 .footer-black {
     background-color: #2F303A;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px 15px;
+    @include mobile {
+        padding: 60px 0;
+    }
+    @include tablet {
+        padding-top: 54px;
+        padding-bottom: 66px;
+    }
+    @include desktop {
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 60px 0;
+    }
 }
 
-.footer-black {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
+//.footer-black {
+    //padding-top: 60px;
+    //padding-bottom: 60px;
+//}
 
 .footer-block {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
     display: flex;
-    align-items: baseline;
+    //align-items: baseline;
+    flex-direction: column;
+    text-align: center;
+    @include tablet {
+        width: 768px;
+        padding: 0 15px;
+    }
+    @include desktop {
+        align-items: baseline;
+        width: 1200px;
+        flex-direction: row;
+        margin: 0 auto;
+        justify-content: space-between;
+        padding: 0 15px;
+    }
 }
 
+.footer-logo-links {
+        @include tablet {
+                display: flex;
+                justify-content: space-around;
+                margin-bottom: 60px;
+                align-items: baseline;
+            }
+        
+            @include desktop {
+                margin-bottom: 0;
+                align-items: baseline;
+            }
+}
+
+.footer-contacts {
+display: block;
+
+    @include desktop {
+        text-align: left;
+    }
+
+    >.logo-bottom {
+        @include tablet {
+            padding: 0;
+            padding-bottom: 20px;
+        }
+    }
+}
 .logo-bottom {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -37,6 +98,7 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--primary-white-color);
+
 }
 
 .adress {
@@ -51,6 +113,9 @@
 }
 
 .footer-list:not(:last-child) {
+    @include tablet {
+        margin-bottom: 8px;
+    }
     margin-bottom: 9px;
 }
 
@@ -70,7 +135,15 @@
 
 .footer-social-list {
     display: block;
-    margin-left: 70px;
+    //margin-left: 70px;
+    margin: 60px 0;
+    @include tablet {
+        margin: 0;
+    }
+    @include desktop {
+        align-items: baseline;
+        margin-left: 70px;
+    }
 }
 
 .footer-social-title,
@@ -82,13 +155,33 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    @include desktop {
+            text-align: left;
+        }
 
+}
+.footer-subscribe-title {
+    @include tablet {
+        margin-bottom: 20px;
+    }
+
+    @include desktop {
+        text-align: left;
+    }
 }
 
 .footer-social-title {
     display: block;
 }
 
+
+.footer-label {
+    margin-bottom: 20px;
+    width: 100%;
+    @include desktop {
+        margin: 0;
+    }
+}
 .social-list {
     display: flex;
     gap: 10px;
@@ -149,7 +242,10 @@
 }
 
 .footer-subscribe {
-    margin-left: auto;
+    @include desktop {
+        width: 570px;
+    }
+    //margin-left: auto;
 }
 
 .footer-input-text:hover,
@@ -159,9 +255,15 @@
 
 .footer-form {
     display: flex;
-    position: relative;
-    justify-content: space-between;
-    gap: 12px;
+    //position: relative;
+    //justify-content: space-between;
+    //gap: 12px;
+    flex-direction: column;
+    align-items: center;
+    @include desktop {
+        margin-top: 20px;
+        flex-direction: row;
+    }
 }
 
 .footer-icon-send {

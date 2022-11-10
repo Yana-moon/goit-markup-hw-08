@@ -1,30 +1,39 @@
 
 
-.mobile {
+/*.mobile {
     display: flex;
     margin-left: auto;
     align-items: center;
-
     @include tablet {
-        display: none;
-    }
+            display: none;
+        }
 } 
-/*.mobile__menu-open {
+.mobile__menu-open {
     margin-left: auto;
 } */
 
 .mobile__menu-open {
+    display: flex;
     padding: 0;
     margin-left: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border: none;
     background-color: transparent;
     cursor: pointer;
+    @include tablet {
+            display: none;
+        }
+        @include desktop {
+            display: none;
+        }
 }
 
 .mobile__open-icon {
     color: var(--primary-color);
 
 }
+
 .mobile__open-icon:hover,
 .mobile__open-icon:focus {
         fill: var(--accent-color);      
@@ -58,10 +67,11 @@
 }
 
 .mobile__top {
-    position: relative;
+    margin-bottom: 50px;
 }
 
 .mobile__close {
+    display: flex;
     position: absolute;
     top: 10px;
     right: 15px;
@@ -70,6 +80,7 @@
     padding: 0;
     border: none;
     cursor: pointer;
+    background-color: transparent;
 
     &:hover,
     &:focus {
@@ -79,12 +90,18 @@
     transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile__list {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    margin-bottom: 302px;
+.mob-menu__container {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 100%;
+overflow: auto;
 }
+
+.mobile__li:not(:last-child) {
+margin-bottom: 32px;
+}
+
 
 .mobile__list {
     position: relative;
@@ -102,6 +119,7 @@
         color: var(--accent-color);
     }
 
+
 .mobile__contact-list { 
         display: flex;
         flex-direction: column;
@@ -112,6 +130,9 @@
 
 .current-mobile {
     color: var(--accent-color);
+}
+.mobile__contact-li:not(:last-child) {
+    margin-bottom: 32px;
 }
 
 .mobile__tell-link {
@@ -136,7 +157,6 @@
     line-height: 1.167;
     letter-spacing: 0.02em;
     color: var(--text-color);
-    margin-bottom: 64px;
 
     &:focus,
     &:hover {
@@ -150,6 +170,7 @@
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    margin-top: 64px;
 }
 
 .menu-soc__link {

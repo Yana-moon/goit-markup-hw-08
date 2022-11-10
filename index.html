@@ -48,11 +48,6 @@
     </ul>
     </div>
     <!-- Mobile Menu -->
-        <!--<div class="mobile">
-          <a class="mobile__logo" href="./index.html" lang="en"
-            ><span class="logo-accent">Web</span>Studio</a
-          >
-           <div class="mobile">  -->
             <button type="button" class="mobile__menu-open" data-menu-open>
             <svg class="mobile__open-icon" width="40" height="40">
             <use href="./images/symbol-defs.svg#icon-menu"></use>
@@ -64,26 +59,27 @@
                 <use href="./images/symbol-defs.svg#icon-close-menu"></use>
                 </svg>
             </button>
+            <div class="mob-menu__container">
         <div class="mobile__top" >
             <ul class="mobile__list">
-                <li>
+                <li class="mobile__li">
                 <a class="mobile__link current-mobile" href="./index.html">Студія</a>
                 </li>
-                <li>
+                <li class="mobile__li">
                 <a class="mobile__link" href="./portfolio.html">Портфоліо</a>
                 </li>
-                <li>
+                <li class="mobile__li">
                 <a class="mobile__link" href="#">Контакти</a>
                 </li>
             </ul>
             </div>
             <div class="mobile__bottom">
             <ul class="mobile__contact-list">
-                <li>
+                <li class="mobile__contact-li">
                 <a class="mobile__tell-link" href="tel:+380961111111">
                     +38 096 111 11 11</a>
                 </li>
-                <li>
+                <li class="mobile__contact-li">
                 <a class="mobile__email-link" href="mailto:info@devstudio.com"
                     >info@devstudio.com</a>
                 </li>
@@ -464,11 +460,12 @@
         </li>
         </ul>
             </div> 
-        </section> <!--
+        </section> 
     </main>
     <footer class="footer-black">
         <div class="container footer-block">
             <div class="footer-logo-links">
+                <div class="footer-contacts">
         <a class="logo-bottom" href="./index.html"><span class="logo__part">Web</span><span class="studio-footer">Studio</span></a>
         <address class="adress">
         <ul class="adress-footer">
@@ -517,11 +514,12 @@
             </a>
             </li>
         </ul>
+        </div>
     </div>
     <div class="footer-subscribe">
         <p class="footer-subscribe-title">Підпишіться на розсилку</p>
     <form class="footer-form">
-        <label>
+        <label class="footer-label">
             <input type="text" class="footer-input-text" name="user-email"  placeholder="E-mail"  id="user-email"></label>
         
             <button type="submit" class="footer-button">Підписатися
@@ -589,7 +587,7 @@
             <button type="submit" class="modal-button">Відправити</button>
         </form>
     </div>
-    </div> -->
+    </div> 
     <script src="./js/modal.js"></script> 
     <script src="./js/menu.js"></script>
 </body>
