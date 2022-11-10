@@ -1,7 +1,7 @@
 .section__workers {
     padding-top: 60px;
     padding-bottom: 60px;
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
             padding-top: 94px;
             padding-bottom: 94px;
         }
@@ -23,7 +23,7 @@
 
 .workers__list {
     color: var(--primary-color);
-    width: 100%;
+
     background-color: var(--primary-white-color);
     text-align: center;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
@@ -37,7 +37,7 @@
             width: calc((100% - 30px) / 2);
         }
     
-        @media screen and (min-width: 1600px) {
+        @media screen and (min-width: 1200px) {
             width: calc((100% - 90px) / 4);
         }
 }

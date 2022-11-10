@@ -27,6 +27,7 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
   height: auto;
 }
 
@@ -737,7 +738,7 @@ ol {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .section__workers {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -760,7 +761,6 @@ ol {
 
 .workers__list {
   color: var(--primary-color);
-  width: 100%;
   background-color: var(--primary-white-color);
   text-align: center;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -775,7 +775,7 @@ ol {
     width: calc((100% - 30px) / 2);
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .workers__list {
     width: calc((100% - 90px) / 4);
   }
@@ -1350,6 +1350,7 @@ ol {
 .backdrop {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
@@ -1361,14 +1362,30 @@ ol {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  width: 96%;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%);
   transition: transform 300ms linear;
   padding: 40px;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 96%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    max-width: 528px;
+    min-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -1420,6 +1437,12 @@ ol {
   text-align: center;
   margin-bottom: 12px;
 }
+@media screen and (min-width: 1200px) {
+  .modal-title {
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+  }
+}
 
 .modal-label-text {
   font-size: 12px;
@@ -1469,8 +1492,12 @@ ol {
 }
 
 .modal-comment {
+  width: 100%;
+  height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: transparent;
 }
 
 .modal-comment:hover,
@@ -1511,14 +1538,19 @@ ol {
 }
 
 .check-text {
-  font-size: 14px;
-  line-height: 1.7;
-  vertical-align: Center;
-  letter-spacing: 0.03em;
-  color: var(--text-color);
+  font-size: 12px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  color: var(--text-color);
+}
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+    line-height: 1.7;
+    vertical-align: Center;
+    letter-spacing: 0.03em;
+    justify-content: center;
+  }
 }
 
 .check-text span {
@@ -1526,11 +1558,17 @@ ol {
   height: 15px;
   border: 2px solid var(--primary-color);
   border-radius: 2px;
-  margin-right: 7px;
+  margin-right: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
+}
+@media screen and (min-width: 1200px) {
+  .check-text span {
+    margin-left: 12px;
+    margin-right: 10px;
+  }
 }
 
 .modal-field-checkbox {
@@ -1548,12 +1586,17 @@ ol {
 }
 
 .license-link {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: underline;
   margin-left: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .license-link {
+    font-size: 14px;
+  }
 }
 
 .modal-button {

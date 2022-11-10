@@ -1,6 +1,7 @@
 .backdrop {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
@@ -12,8 +13,11 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 528px;
-    min-height: 581px;
+    //width: 528px;
+    width: 450px;
+    //min-height: 581px;
+    //height: 609px;
+    width: 96%;
     background-color: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -21,6 +25,16 @@
     transform: translate(-50%, -50%);
     transition: transform 300ms linear;
     padding: 40px;
+    @include mobile {
+        width: 96%;
+    }
+    @include tablet {
+        max-width: 528px;
+        min-width: 450px;
+    }
+        @include desktop {
+            max-width: 528px;
+        }
 }
 
 .backdrop.is-hidden .modal {
@@ -71,6 +85,12 @@
     color: var(--primary-color);
     text-align: center;
     margin-bottom: 12px;
+    @include desktop {
+            //font-size: 20px;
+            //font-weight: 700;
+            line-height: 1.15;
+            letter-spacing: 0.03em;
+        }
 }
 
 .modal-label-text {
@@ -121,8 +141,12 @@
 }
 
 .modal-comment {
+    width: 100%;
+    height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: transparent;
 }
 
 .modal-comment:hover,
@@ -147,14 +171,21 @@
 }
 
 .check-text {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    @include desktop {
     font-size: 14px;
     line-height: 1.7;
     vertical-align: Center;
     letter-spacing: 0.03em;
-    color: var(--text-color);
-    display: flex;
-    align-items: center;
+    
+    
+    
     justify-content: center;
+    
+    }
 }
 
 .check-text span {
@@ -162,11 +193,15 @@
     height: 15px;
     border: 2px solid var(--primary-color);
     border-radius: 2px;
-    margin-right: 7px;
+    margin-right: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
+    @include desktop {
+        margin-left: 12px;
+        margin-right: 10px;
+    }
 }
 
 .modal-field-checkbox {
@@ -186,12 +221,16 @@
 
 
 .license-link {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--accent-color);
     text-decoration: underline;
     margin-left: 20px;
+    //font-size: 12px; 
+        @include desktop {
+            font-size: 14px;
+}
 }
 
 .modal-button {
