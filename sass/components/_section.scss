@@ -1,7 +1,7 @@
 .section {
     padding-top: 60px;
     padding-bottom: 60px;
-    
+    margin: 0 auto;
         @include desktop {
             padding-top: 94px;
             padding-bottom: 94px;
@@ -47,7 +47,13 @@
         width: 100%;
     //max-height: 16px;
     font-size: 14px;
-    align-items: center;
+    text-align: center;
+    @include tablet {
+    text-align: left;
+    }
+    @include desktop {
+    text-align: left;
+        }
 }
 
 .section__subtitle {

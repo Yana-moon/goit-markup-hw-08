@@ -619,6 +619,7 @@ ol {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 1200px) {
   .section {
@@ -667,7 +668,17 @@ ol {
   margin-bottom: 10px;
   width: 100%;
   font-size: 14px;
-  align-items: center;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .section__paragraph {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section__paragraph {
+    text-align: left;
+  }
 }
 
 .section__subtitle {
