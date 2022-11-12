@@ -16,43 +16,51 @@
     margin-right: auto;
     background-repeat: no-repeat;
     background-position: center;
-    height: 400px;
+    //height: 400px;
     background-size: cover;
     text-align: center;
+    justify-content: center;
+    display: flex;
+    height: auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                             rgba(47, 48, 58, 0.4)),
-                        url("../images/bg-image-mobile.jpg");
+                        url(../images/bg-image-mobile.jpg);
+    width: 100%;
+    max-width: 767px;
     //max-width: 480px;
     @include retina {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-        url("../images/bg-image-mobile-2x.jpg");
+        url(../images/bg-image-mobile-2x.jpg);
                 }
     @include tablet {
     //max-width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                             rgba(47, 48, 58, 0.4)),
-                        url("../images/bg-image-tablet.jpg");
-    }
-                
+                        url(../images/bg-image-tablet.jpg);
+    min-width: 768px;
+    max-width: 1199px;            
     @include retina {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                             rgba(47, 48, 58, 0.4)),
-                        url("../images/bg-image-tablet-2x.jpg");
-    }          
+                        url(../images/bg-image-tablet-2x.jpg);
+    }
+}          
     @include desktop {
     //max-width: 1600px;
-    height: 600px;
+    //height: 600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                             rgba(47, 48, 58, 0.4)),
-                        url("../images/background-image.jpg");
-    }            
+                        url(../images/background-image.jpg);
+    min-width: 1200px;
+    max-width: 1600px;         
     @include retina {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                             rgba(47, 48, 58, 0.4)),
-                        url("../images/background-image-2x.jpg");
+                        url(../images/background-image-2x.jpg);
     }
             }
+        }
 
 .section__black-title {
     font-weight: 900;
