@@ -155,7 +155,6 @@ ol {
 }
 @media screen and (min-width: 768px) {
   .menu {
-    margin-left: 90px;
     display: flex;
     gap: 50px;
     font-weight: 500;
@@ -180,7 +179,7 @@ ol {
   position: relative;
 }
 
-.menu .menu__list .current-link::after {
+.current-link::after {
   content: " ";
   position: absolute;
   display: block;
@@ -210,6 +209,7 @@ ol {
 
 .current-link {
   color: var(--accent-color);
+  position: relative;
 }
 
 .contacts {
@@ -1015,7 +1015,6 @@ ol {
 @media screen and (min-width: 768px) {
   .footer-contacts > .logo-bottom {
     padding: 0;
-    padding-bottom: 20px;
   }
 }
 

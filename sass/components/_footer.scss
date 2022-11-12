@@ -69,7 +69,7 @@ display: block;
     >.logo-bottom {
         @include tablet {
             padding: 0;
-            padding-bottom: 20px;
+            //padding-bottom: 20px;
         }
     }
 }

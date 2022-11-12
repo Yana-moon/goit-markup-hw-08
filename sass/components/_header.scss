@@ -70,7 +70,7 @@
     //display: flex;
         display: none; 
         @include tablet {
-            margin-left: 90px;
+            //margin-left: 90px;
             display: flex;
             //align-items: center;
             gap: 50px;
@@ -95,7 +95,8 @@
     position: relative;
 }
 
-.menu .menu__list .current-link::after {
+//.menu .menu__list 
+.current-link::after {
     content: " ";
     position: absolute;
     display: block;
@@ -125,6 +126,7 @@
 
 .current-link {
     color: var(--accent-color);
+    position: relative;
 }
 
 .contacts {
