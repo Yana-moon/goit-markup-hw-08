@@ -1639,6 +1639,7 @@ ol {
   letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: underline;
+  justify-content: space-between;
 }
 @media screen and (min-width: 1200px) {
   .license-link {
