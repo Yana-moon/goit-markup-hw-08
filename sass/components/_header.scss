@@ -1,7 +1,7 @@
 
 
 .header {
-    //border-bottom: 1px solid var(--header-border);
+    border-bottom: 1px solid var(--header-border);
     background-color: var(--primary-white-color);
     border-bottom: 1px solid #ececec;
     max-width: 1600px;
@@ -21,7 +21,7 @@
             }
             @include desktop {
                 margin: 0 auto;
-                //width: 100%;
+                min-width: 1200px;
                 padding: 0 10px;
             }
 }
@@ -95,12 +95,12 @@
     }
 }
 
-.menu .menu__list .contacts__list .current-link {
+.menu .menu__list .current-link {
     color: var(--accent-color);
     position: relative;
 }
 
-//.menu .menu__list 
+
 .current-link::after {
     content: " ";
     position: absolute;
@@ -129,10 +129,7 @@
     position: relative;
 }
 
-.current-link {
-    color: var(--accent-color);
-    position: relative;
-}
+
 
 .contacts {
     //display: flex;
@@ -172,10 +169,6 @@
         //padding-top: 20px;
     }
 
-    @include desktop {
-        padding-top: 32px;
-        padding-bottom: 32px;
-    }
 }
 .contacts__list:first-child {
     margin-left: 0;
