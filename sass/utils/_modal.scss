@@ -26,7 +26,7 @@
 
     @include desktop {
         min-width: 528px;
-        min-height: 581px;
+        max-height: 581px;
     }
 }
 
@@ -175,6 +175,7 @@
     line-height: 1.7;
     vertical-align: Center;
     letter-spacing: 0.03em;
+    //margin-bottom: 20px;
     
     
     
@@ -201,12 +202,14 @@
 
 .modal-field-checkbox {
     margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 .input-check:checked+.check-text span {
     background-color: var(--accent-color);
     border-color: transparent;
     fill: var(--primary-white-color);
+    //margin-bottom: 20px;
 }
 
 .input-check:focus+.check-text span {

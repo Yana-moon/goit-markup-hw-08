@@ -1418,7 +1418,7 @@ ol {
 @media screen and (min-width: 1200px) {
   .modal {
     min-width: 528px;
-    min-height: 581px;
+    max-height: 581px;
   }
 }
 
@@ -1609,6 +1609,7 @@ ol {
 
 .modal-field-checkbox {
   margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .input-check:checked + .check-text span {
