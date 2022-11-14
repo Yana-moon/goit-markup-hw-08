@@ -1,9 +1,13 @@
 
 
 .header {
-    border-bottom: 1px solid var(--header-border);
+    //border-bottom: 1px solid var(--header-border);
     background-color: var(--primary-white-color);
     border-bottom: 1px solid #ececec;
+    max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+        letter-spacing: 0.02em;
 }
 
 .header__container {
@@ -17,7 +21,7 @@
             }
             @include desktop {
                 margin: 0 auto;
-                max-width: 1200 px;
+                //width: 100%;
                 padding: 0 10px;
             }
 }
@@ -34,6 +38,7 @@
         
             @include desktop {
                 padding: 0;
+                align-items: center;
             }
         }
 
